@@ -1,7 +1,7 @@
 # This program asks for your name and calculates your average and highest test scores
 # It contains several errors (syntax, runtime, and logic) for you to find and fix
 
-print("Welcome to the Debugging Lab!)
+print("Welcome to the Debugging Lab!")
 
 name = input("Enter your name: ")
 print("Hello " + name + "!" + " Let's calculate your test scores.")
