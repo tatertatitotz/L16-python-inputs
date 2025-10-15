@@ -13,11 +13,11 @@ for score in scores:
     total = total + score
 
 average = total / len(scores)
-print("Your average score is:" + average)
+print("Your average score is: ", average)
 
 highest = 0
 for s in scores:
     if s > highest:
         highest = s
 
-print("Your highest score was:" + highest)
+print("Your highest score was:" + str(highest))
