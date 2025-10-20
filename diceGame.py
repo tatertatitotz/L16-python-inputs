@@ -1,7 +1,7 @@
 import random 
 #define die values
-die = random.randint(0, 6)
-die2 = random.randint(0, 6)
+die = random.randint(1, 6)
+die2 = random.randint(1, 6)
 #define total
 total = die + die2
 
