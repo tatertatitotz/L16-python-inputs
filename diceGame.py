@@ -9,6 +9,7 @@ total = die + die2
 print(f"You rolled {die}")
 print(f"You rolled {die2}")
 #If the dice total is 7 OR 11 then you win.
+#always type or for at least one has to be true to print.
 if total == 7 or total == 11:
     print("You win!")
 #dice have the same number
@@ -18,6 +19,9 @@ elif die == die2:
         print("Jackpot! You win!")
     else:
         print("Doubles! You win!")
+    #try later
+    #if total == 12:
+        #print ("Jackput! You win!")
 #Indicates loss! Important, nothing shows up if you lose otherwise!
 else:
     print("You lose")
