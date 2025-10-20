@@ -10,7 +10,10 @@ if total == 7 or total == 11:
     print("You win!")
 #dice have the same number
 elif die == die2:
-    print("Doubles! You win!")
+    if die == 6:
+        print("Jackpot! You win!")
+    else:
+        print("Doubles! You win!")
 #Indicates loss! Important, nothing shows up if you lose otherwise!
 else:
     print("You lose")
