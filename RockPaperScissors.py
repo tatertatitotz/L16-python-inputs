@@ -1,8 +1,6 @@
 #must always import random
 import random
 
-rock = 1
-paper = 2
-scissors = 3
+playerInput=input("rock (r), paper (p) or scissors (s)? Enter: ")
 
-if 
+if
