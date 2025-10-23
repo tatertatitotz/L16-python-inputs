@@ -27,6 +27,7 @@ print(f"{player} vs. {computer}")
 #if player and computer are the same, it is a tie
 if player == computer:
     print("Tie!")
+    #adds one to the tieCount variable each time this is the result
     tieCount += 1
 #if the player chooses rock and the computer chooses paper, you lose
 elif player == "r" and computer == "p":
@@ -35,6 +36,7 @@ elif player == "r" and computer == "p":
 #if the player chooses rock and the computer chooses scissors, you win
 elif player == "r" and computer == "s":
     print("You Win!")
+    #adds one to the wins variable each time you win
     wins += 1
 #if the player chooses paper and the computer chooses rock, you win
 elif player == "p" and computer == "r":
@@ -43,6 +45,7 @@ elif player == "p" and computer == "r":
 #if the player chooses paper and the computer chooses scissors, you lose
 elif player == "p" and computer == "s":
     print("You Lost!")
+    #adds one to the losses variable each time you lose
     losses += 1
 #if the player chooses scissors and the computer chooses rock, you win
 elif player == "s" and computer == "r":
