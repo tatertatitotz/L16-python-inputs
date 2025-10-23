@@ -1,30 +1,114 @@
 #must always import random
 import random
-#where randit will go
+#allows for the computer to pick a random number
 chosen = random.randint(1, 3)
 
+#if the random number is 1 computer plays rock
 if chosen == 1:
     computer = "r"
-if chosen == 2:
+#if the random number is 2 computer plays paper
+elif chosen == 2:
     computer = "p"
-if chosen == 3:
+#if the random number is 3 computer plays scissors
+#I chose to put an elif so I can more easily see the 3.
+elif chosen == 3:
     computer = "s"
 
+#initial counts for each possible outcome
+tieCount = 0
+wins = 0
+losses = 0
+#asking for the player to choose from rock, paper or scissors.
 player = input("rock (r), paper (p) or scissors (s)? Enter: ")
 
+#display for what the computer chose and the player chose
 print(f"{player} vs. {computer}")
 
+#if player and computer are the same, it is a tie
 if player == computer:
     print("Tie!")
-if player == "r" and computer == "p":
-    print("Computer Wins!")
-if player == "r" and computer == "s":
+    tieCount += 1
+#if the player chooses rock and the computer chooses paper, you lose
+elif player == "r" and computer == "p":
+    print("You Lost!")
+    losses += 1
+#if the player chooses rock and the computer chooses scissors, you win
+elif player == "r" and computer == "s":
     print("You Win!")
-if player == "p" and computer == "r":
+    wins += 1
+#if the player chooses paper and the computer chooses rock, you win
+elif player == "p" and computer == "r":
     print("You Win!")
-if player == "p" and computer == "s":
-    print("Computer Wins!")
-if player == "s" and computer == "r":
-    print("Computer Wins!")
-if player == "s" and computer == "p":
+    wins += 1
+#if the player chooses paper and the computer chooses scissors, you lose
+elif player == "p" and computer == "s":
+    print("You Lost!")
+    losses += 1
+#if the player chooses scissors and the computer chooses rock, you win
+elif player == "s" and computer == "r":
+    print("You Lost!")
+    losses += 1
+#if the player chooses scissors and the computer chooses paper, you win
+elif player == "s" and computer == "p":
     print("You Win!")
+    wins += 1
+
+#play as much as you want!
+ask = input("Do you want to play again? y or n: ")
+#as long as the you respond with y or Y it will continue playing.
+while ask == "y" or ask == "Y":
+#loads everything back but in a loop this time.
+#the easier way to do it is have it begin with a loop that has ask the ask string as
+#"Do you want to begin playing? y or n"
+    chosen = random.randint(1, 3)
+
+    #if the random number is 1 computer plays rock
+    if chosen == 1:
+        computer = "r"
+    #if the random number is 2 computer plays paper
+    elif chosen == 2:
+        computer = "p"
+    #if the random number is 3 computer plays scissors
+    elif chosen == 3:
+        computer = "s"
+
+    player = input("rock (r), paper (p) or scissors (s)? Enter: ")
+
+    #display for what the computer chose and the player chose
+    print(f"{player} vs. {computer}")
+
+    #if player and computer are the same, it is a tie
+    if player == computer:
+        print("Tie!")
+        tieCount += 1
+    #if the player chooses rock and the computer chooses paper, you lose
+    elif player == "r" and computer == "p":
+        print("You Lost!")
+        losses += 1
+    #if the player chooses rock and the computer chooses scissors, you win
+    elif player == "r" and computer == "s":
+        print("You Win!")
+        wins += 1
+    #if the player chooses paper and the computer chooses rock, you win
+    elif player == "p" and computer == "r":
+        print("You Win!")
+        wins += 1
+    #if the player chooses paper and the computer chooses scissors, you lose
+    elif player == "p" and computer == "s":
+        print("You Lost!")
+        losses += 1
+    #if the player chooses scissors and the computer chooses rock, you win
+    elif player == "s" and computer == "r":
+        print("You Lost!")
+        losses += 1
+    #if the player chooses scissors and the computer chooses paper, you win
+    elif player == "s" and computer == "p":
+        print("You Win!")
+        wins += 1
+    #will ask at the end of each round
+    ask = input("Do you want to play again? y or n: ")
+#after the loop ends, it provides you with your number of wins losses and ties.
+print(f"You won {wins} times!")
+print(f"You lost {losses} times :(")
+print(f"You tied {tieCount} times.")
+        
