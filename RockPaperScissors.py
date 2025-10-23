@@ -111,7 +111,7 @@ while ask == "y" or ask == "Y":
     #will ask at the end of each round
     ask = input("Do you want to play again? y or n: ")
 #after the loop ends, it provides you with your number of wins losses and ties.
-print(f"You won {wins} times!")
-print(f"You lost {losses} times :(")
-print(f"You tied {tieCount} times.")
+print(f"Wins: {wins}!")
+print(f"Losses: {losses} :(")
+print(f"Ties: {tieCount}.")
         
