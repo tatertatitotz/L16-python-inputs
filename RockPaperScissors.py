@@ -1,13 +1,13 @@
 #must always import random
 import random
 #where randit will go
-computer = 1
+chosen = 1
 
-if computer == 1:
+if chosen == 1:
     computer = "r"
-if computer == 2:
+if chosen == 2:
     computer = "p"
-if computer == 3:
+if chosen == 3:
     computer = "s"
 
 player = input("rock (r), paper (p) or scissors (s)? Enter: ")
