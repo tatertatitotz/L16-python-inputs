@@ -1,7 +1,7 @@
 #must always import random
 import random
 #where randit will go
-computer = 3
+computer = 1
 
 if computer == 1:
     computer = "r"
@@ -23,4 +23,6 @@ if player == "r" and computer == "s":
 if player == "p" and computer == "r":
     print("You Win!")
 if player == "p" and computer == "s":
+    print("Computer Wins!")
+if player == "s" and computer == "r":
     print("Computer Wins!")
