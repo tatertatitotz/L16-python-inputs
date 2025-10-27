@@ -8,7 +8,7 @@ wins = 0
 losses = 0
 
 ask = input("Do you want to play? y or n: ")
-#as long as you respond with y or Y it will continue playing.
+#as long as you respond with y or Y it will start playing.
 while ask == "y" or ask == "Y":
     #allows for the computer to pick a random number
     chosen = random.randint(1, 3)
