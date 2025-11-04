@@ -1,21 +1,20 @@
 import random
 
-number = 4
-char = "abcdefghijklmnopqrstuvwxyz"
-currentLength = 0
-currentNumber = 0
-length = 4
+#allows the user to give a number of passwords and the length
+number = int(input("How many passwords? "))
+length = int(input("How long are they? "))
+#allows random.choice to pick from this pool of characters
+char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=[]\;'./~!@#$%^&*()_+|<>?"
 
-#password must be defined as a string before adding characters
-password = ""
-#if the currentLength is shorter than the given length, it repeasts
-
+#for loop for the number of passwords that will be printed
 for password in range(number):
+    #assigns password as a blank string
     password = ""
-    #this doesn't work because the while loop ends after the first password is created
-    while length > currentLength:
+    #sets the limit for the number of characters in a password
+    for count in range(length):
+        #adds a random character to each password
         password += random.choice(char)
-        currentLength += 1
+    #prints the given number of passwords
     print(password)
 
 
