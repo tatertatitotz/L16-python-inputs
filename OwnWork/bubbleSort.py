@@ -16,6 +16,7 @@ while range[]
     
         if numbers[count] > numbers[count+1]:
             numbers[count + 1] = temp
+>>>>>>> 9cc926dc6a1a446b5ac299318223e81ef3bff1d1
             numbers[count + 1] = numbers[count]
             numbers[count] = temp
 
