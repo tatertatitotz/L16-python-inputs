@@ -1,5 +1,4 @@
 numbers = [8, 2, 5, 3, 1, 7, 4, 6]
-<<<<<<< HEAD
 sorted = [1, 2, 3, 4, 5, 6, 7, 8]
 temp = 0
 
@@ -8,15 +7,6 @@ while numbers != sorted:
         
         if numbers[count] > numbers[count+1]:
             temp = numbers[count+1]
-=======
-highest = 0
-temp = 0
-while range[]
-    for count in range(numbers.len()):
-    
-        if numbers[count] > numbers[count+1]:
-            numbers[count + 1] = temp
->>>>>>> 9cc926dc6a1a446b5ac299318223e81ef3bff1d1
             numbers[count + 1] = numbers[count]
             numbers[count] = temp
 
